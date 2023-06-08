@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 async function connectDb(){
     try{
-        await mongoose.connect('mongodb+srv://anishmulla7:anish123@tickets.hoenmqf.mongodb.net/?retryWrites=true&w=majority/Tickets',{
+        await mongoose.connect('mongodb+srv://anishmulla7:anish123@tickets.hoenmqf.mongodb.net/Tickets',{
             useNewUrlParser: true,
             useUnifiedTopology: true
         }) .then(()=>{console.log("connected to mongoDB")})
